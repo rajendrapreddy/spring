@@ -15,7 +15,17 @@ public class FamilyController {
 	public List<Person> getPerson() {
 		List<Person> personsList = new ArrayList<Person>();
 
-		personsList.add(new Person(1, "Leeladhar", "G", "leeladhar45@gmail.com"));
+		
+		 personsList.add(new Person(1, "Leeladhar", "G", "leeladhar45@gmail.com"));
+		 personsList.add(new Person(2, "Teena", "G", "leeladhar45@gmail.com"));
+		 
+		Person obj = new Person();
+		obj.setId(3);
+		obj.setFirstName("Te");
+		obj.setLastName("ghh");
+		obj.setEmail("ggjh@jj.com");
+
+		personsList.add(obj);
 		return personsList;
 	}
 
